@@ -1,0 +1,339 @@
+/*
+#51CCA8  zelena
+#51B9CC  zeleno plava
+#5E92CC  plava
+#6E81D0  ljubicasta
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700,900');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+/* header  */
+header {
+    background: linear-gradient(rgba(31,31,46,0.9), rgba(31,31,46,0.7)), url(img/header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    color: white;
+    font-size: 2rem;
+    padding-left: 50px;
+    padding-top: 15px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+nav ul {
+    display: flex;
+    padding: 15px 50px 15px 0;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.hgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 0 300px;
+    text-align: center;
+    height: 100vh;
+}
+.hgroup h1 {
+    font-size: 4rem;
+    position: relative;
+    margin-bottom: 30px;
+}
+.hgroup h1::after {
+    content: "";
+    background: white;
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    top: 240px;
+    left: 235px;
+}
+.hgroup h5 {
+    font-size: 1.2rem;
+}
+/* section one  */
+.section-one {
+    display: flex;
+}
+.section-one .left {
+    display: flex;
+    flex: 7;
+    justify-content: center;
+    align-items: center;
+    background: #51CCA8;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+.section-one .right {
+    flex: 5;
+    background-image: url(img/section-one.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+.section-one .right .content {
+    background: white;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 40px;
+    margin-left: -300px;
+    border-radius: 10px;
+}
+.section-one .right p {
+    padding: 30px 0;
+    line-height: 1.8;
+}
+.section-one button {
+    width: 200px;
+    padding: 10px 50px;
+    border: none;
+    background: #51CCA8;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+/* section two  */
+.section-two {
+    display: flex;
+}
+.section-two .left {
+    flex: 5;
+    background-image: url(img/section-two.jpg);
+    background-position: left;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+    position: relative;
+}
+.section-two .right {
+    flex: 7;
+    background: #51B9CC;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+}
+.section-two .left .content {
+    background: white;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    right: -230px;
+}
+.section-two .left p {
+    padding: 30px 0;
+    line-height: 1.8;
+}
+.section-two button {
+    width: 200px;
+    padding: 10px 50px;
+    border: none;
+    background: #51B9CC;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+/* section three  */
+.section-three {
+    display: flex;
+}
+.section-three .left {
+    display: flex;
+    flex: 7;
+    justify-content: center;
+    align-items: center;
+    background: #5E92CC;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+.section-three .right {
+    flex: 5;
+    background-image: url(img/section-three.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+.section-three .right .content {
+    background: white;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 40px;
+    margin-left: -300px;
+    border-radius: 10px;
+}
+.section-three .right p {
+    padding: 30px 0;
+    line-height: 1.8;
+}
+.section-three button {
+    width: 200px;
+    padding: 10px 50px;
+    border: none;
+    background: #5E92CC;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+/* section four  */
+.section-four {
+    display: flex;
+    background: #6E81D0;
+    padding: 40px 0;
+}
+.section-four img {
+    width: 100%;
+}
+.row1 {
+    flex: 1;
+}
+.row2 {
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+}
+.row3 {
+    flex: 1;
+}
+.section-four .text {
+    background: white;
+    padding: 50px;
+    text-align: center;
+}
+.section-four h3 {
+    font-size: 3rem;
+}
+.section-four p {
+    font-size: 1.3rem;
+    padding: 30px 0;
+}
+.section-four button {
+    width: 200px;
+    padding: 10px 50px;
+    border: none;
+    background: #6E81D0;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+/* section five  */
+.section-five {
+    display: flex;
+}
+.section-five .row {
+    flex: 1;
+}
+.section-five img {
+    width: 100%;
+}
+.section-five .row {
+    margin: 20px;
+    border: 1px solid gray;
+    text-align: center;
+}
+.section-five .text {
+    padding: 20px;
+}
+.section-five h3 {
+    font-size: 1.8rem;
+}
+.section-five p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+    padding: 20px 0;
+}
+.section-five button {
+    width: 200px;
+    padding: 10px 50px;
+    border: none;
+    background: #6E81D0;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+/* section six  */
+.section-six {
+    text-align: center;
+    background: #51CCA8;
+    color: white;
+    padding: 0px 100px;
+}
+.section-six h2 {
+    font-size: 2rem;
+    padding: 40px 0px 20px 0;
+}
+.section-six p {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+.section-six input {
+    padding: 10px;
+    width: 300px;
+}
+.section-six button {
+    padding: 7px;
+    width: 180px;
+    font-size: 1.2rem;
+    position: relative;
+    top: 2px;
+    margin-bottom: 40px;
+}
+/* footer  */
+footer {
+    display: flex;
+    text-align: center;
+}
+footer .row {
+    flex: 1;
+    margin: 40px 0;
+}
